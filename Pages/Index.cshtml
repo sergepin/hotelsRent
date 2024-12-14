@@ -1,0 +1,16 @@
+﻿@page
+@model hotelsRent.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <!-- Mostrar el mensaje de conexión a la base de datos -->
+    @if (!string.IsNullOrEmpty(Model.DbConnectionMessage))
+    {
+        <h3>@Model.DbConnectionMessage</h3>
+    }
+</div>
